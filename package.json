@@ -1,0 +1,26 @@
+{
+  "name": "mb-yt-analyzer",
+  "version": "0.0.2",
+  "description": "Microservice which will simply grab youtube video and perform needed analisis to provide useful data for whole service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [
+    "music",
+    "bucket",
+    "youtube",
+    "analisis"
+  ],
+  "author": "Dariusz Kobuszewski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "youtube-dl": "^1.12.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
