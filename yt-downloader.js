@@ -4,7 +4,7 @@ const fs = require('fs');
 function downloadYoutubeVideo(videoId, logger = console) {
   logger.log(`Downloading YT: ${videoId}...`);
 
-  const video = youtubedl(`https://www.youtube.com/watch?v=${videoId}`, ['-f', '22']);
+  const video = youtubedl(`https://www.youtube.com/watch?v=${videoId}`, ['-f', '[abr>=192]']);
   const dstFile = `./videos/${videoId}.mp4`;
   _attachListeners(video);
   video.pipe(fs.createWriteStream(dstFile));
